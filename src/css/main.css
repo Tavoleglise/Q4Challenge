@@ -62,14 +62,18 @@
 
 /* Begin styling the report items here! */
 .reports {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto 30px auto 30px auto;
   grid-template-columns: auto auto auto;
   grid-gap: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
-
 @media (max-width: 740px) {
   .reports {
+    -ms-grid-columns: auto 30px auto;
     grid-template-columns: auto auto;
   }
 }
